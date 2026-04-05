@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGUDAR — Intelligent Urban Defense And Resilience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <div class="nav-logo">
+                <span class="logo-text">IGUDAR</span>
+            </div>
+            <div class="nav-links">
+                <a href="#platform" data-en="Platform" data-it="Piattaforma">Platform</a>
+                <a href="#how" data-en="How it works" data-it="Come funziona">How it works</a>
+                <a href="#founders" data-en="Founders" data-it="Fondatori">Founders</a>
+                <a href="#contact" class="nav-cta" data-en="Request Demo" data-it="Richiedi Demo">Request Demo</a>
+                <button class="lang-btn" id="langToggle">IT</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <p class="hero-eyebrow" data-en="Intelligent Urban Defense And Resilience" data-it="Intelligent Urban Defense And Resilience">Intelligent Urban Defense And Resilience</p>
+            <h1 data-en="Protecting cities before<br>the threat arrives." data-it="Proteggere le citt&agrave; prima<br>che arrivi la minaccia.">Protecting cities before<br>the threat arrives.</h1>
+            <p class="hero-sub" data-en="IGUDAR is an AI platform that analyzes urban environments, identifies vulnerable corridors, and designs optimal defense configurations. So cities are ready." data-it="IGUDAR &egrave; una piattaforma AI che analizza gli ambienti urbani, identifica i corridoi vulnerabili e progetta configurazioni difensive ottimali. Perch&eacute; le citt&agrave; siano pronte.">IGUDAR is an AI platform that analyzes urban environments, identifies vulnerable corridors, and designs optimal defense configurations. So cities are ready.</p>
+            <div class="hero-actions">
+                <a href="#platform" class="btn-primary">
+                    <span data-en="Learn more" data-it="Scopri di pi&ugrave;">Learn more</span>
+                    <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14"><path d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+                </a>
+                <a href="#contact" class="btn-ghost" data-en="Contact us" data-it="Contattaci">Contact us</a>
+            </div>
+        </div>
+
+        <!-- HUD -->
+        <div class="hud">
+            <div class="hud-left">
+                <div class="hud-label">SYSTEM</div>
+                <div class="hud-items">
+                    <div class="hud-item"><span class="dot on"></span><span>GIS Engine</span></div>
+                    <div class="hud-item"><span class="dot on"></span><span data-en="Threat Simulation" data-it="Simulazione Minacce">Threat Simulation</span></div>
+                    <div class="hud-item"><span class="dot on"></span><span data-en="Defense AI" data-it="AI Difensiva">Defense AI</span></div>
+                    <div class="hud-item"><span class="dot on"></span><span data-en="Compliance" data-it="Conformit&agrave;">Compliance</span></div>
+                </div>
+            </div>
+            <div class="hud-right">
+                <div class="hud-label" data-en="METRICS" data-it="METRICHE">METRICS</div>
+                <div class="hud-items">
+                    <div class="hud-stat"><span class="hud-val">Sub-meter</span><span class="hud-unit" data-en="resolution" data-it="risoluzione">resolution</span></div>
+                    <div class="hud-stat"><span class="hud-val">Real GIS</span><span class="hud-unit" data-en="data source" data-it="fonte dati">data source</span></div>
+                    <div class="hud-stat"><span class="hud-val" data-en="Certified" data-it="Certificate">Certified</span><span class="hud-unit" data-en="barrier modules" data-it="barriere modulari">barrier modules</span></div>
+                </div>
+            </div>
+            <div class="hud-bottom">
+                <div class="hud-feed">
+                    <span class="feed-line" data-en="<span class='feed-ts'>00:01</span> Loading city data&hellip; 208M grid cells processed" data-it="<span class='feed-ts'>00:01</span> Caricamento dati citt&agrave;&hellip; 208M celle griglia elaborate"><span class="feed-ts">00:01</span> Loading city data&hellip; 208M grid cells processed</span>
+                    <span class="feed-line" data-en="<span class='feed-ts'>00:03</span> 4 attack corridors identified" data-it="<span class='feed-ts'>00:03</span> 4 corridoi d'attacco identificati"><span class="feed-ts">00:03</span> 4 attack corridors identified</span>
+                    <span class="feed-line" data-en="<span class='feed-ts'>00:07</span> Defense optimized &mdash; all corridors secured" data-it="<span class='feed-ts'>00:07</span> Difesa ottimizzata &mdash; tutti i corridoi protetti"><span class="feed-ts">00:07</span> Defense optimized &mdash; all corridors secured</span>
+                    <span class="feed-line feed-ok" data-en="<span class='feed-ts'>00:09</span> TARGET DEFENDED &mdash; 0 casualties" data-it="<span class='feed-ts'>00:09</span> OBIETTIVO DIFESO &mdash; 0 vittime"><span class="feed-ts">00:09</span> TARGET DEFENDED &mdash; 0 casualties</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATEMENT -->
+    <section class="statement">
+        <div class="container">
+            <p data-en="After Nice. After Berlin. After Barcelona. Cities installed barriers. But no one tested if they actually work. <strong>IGUDAR does.</strong>" data-it="Dopo Nizza. Dopo Berlino. Dopo Barcellona. Le citt&agrave; hanno installato barriere. Ma nessuno ha verificato se funzionano davvero. <strong>IGUDAR lo fa.</strong>">After Nice. After Berlin. After Barcelona. Cities installed barriers. But no one tested if they actually work. <strong>IGUDAR does.</strong></p>
+        </div>
+    </section>
+
+    <!-- PLATFORM -->
+    <section class="section" id="platform">
+        <div class="container">
+            <div class="section-num">01</div>
+            <p class="section-tag" data-en="THE PLATFORM" data-it="LA PIATTAFORMA">THE PLATFORM</p>
+            <h2 data-en="Every city has blind spots.<br>IGUDAR finds them." data-it="Ogni citt&agrave; ha punti ciechi.<br>IGUDAR li trova.">Every city has blind spots.<br>IGUDAR finds them.</h2>
+
+            <div class="stories">
+                <div class="story">
+                    <div class="story-content">
+                        <h3 data-en="A piazza protected by three bollards on the main road. An attacker who takes a side street no one considered." data-it="Una piazza protetta da tre dissuasori sulla strada principale. Un attaccante che prende una traversa che nessuno aveva considerato.">A piazza protected by three bollards on the main road. An attacker who takes a side street no one considered.</h3>
+                        <p data-en="Cities defend the obvious routes. IGUDAR maps every possible approach, including the ones that seem irrelevant, and identifies the corridors an intelligent attacker would actually exploit." data-it="Le citt&agrave; difendono i percorsi ovvi. IGUDAR mappa ogni possibile approccio, inclusi quelli apparentemente irrilevanti, e identifica i corridoi che un attaccante intelligente sfrutterebbe davvero.">Cities defend the obvious routes. IGUDAR maps every possible approach, including the ones that seem irrelevant, and identifies the corridors an intelligent attacker would actually exploit.</p>
+                    </div>
+                </div>
+                <div class="story">
+                    <div class="story-content">
+                        <h3 data-en="A security consultant who places barriers by experience. But experience doesn't account for 200 possible approach angles." data-it="Un consulente di sicurezza che piazza le barriere per esperienza. Ma l'esperienza non tiene conto di 200 possibili angoli di approccio.">A security consultant who places barriers by experience. But experience doesn't account for 200 possible approach angles.</h3>
+                        <p data-en="IGUDAR simulates thousands of attack scenarios using real vehicle physics. It finds the gaps that human intuition misses and recommends placements that are mathematically optimal." data-it="IGUDAR simula migliaia di scenari d'attacco con fisica veicolare reale. Trova le falle che l'intuizione umana non coglie e raccomanda piazzamenti matematicamente ottimali.">IGUDAR simulates thousands of attack scenarios using real vehicle physics. It finds the gaps that human intuition misses and recommends placements that are mathematically optimal.</p>
+                    </div>
+                </div>
+                <div class="story">
+                    <div class="story-content">
+                        <h3 data-en="A city that spends &euro;200,000 on barriers. But has never tested them against a determined attacker." data-it="Una citt&agrave; che spende 200.000&euro; in barriere. Ma non le ha mai testate contro un attaccante determinato.">A city that spends &euro;200,000 on barriers. But has never tested them against a determined attacker.</h3>
+                        <p data-en="IGUDAR's adversarial AI attacks the city's own defenses with an intelligent Red Agent. If the defense fails in simulation, it fails before anyone gets hurt. Not after." data-it="L'AI avversaria di IGUDAR attacca le difese della citt&agrave; con un Red Agent intelligente. Se la difesa fallisce in simulazione, fallisce prima che qualcuno si faccia male. Non dopo.">IGUDAR's adversarial AI attacks the city's own defenses with an intelligent Red Agent. If the defense fails in simulation, it fails before anyone gets hurt. Not after.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section section-alt" id="how">
+        <div class="container">
+            <div class="section-num">02</div>
+            <p class="section-tag" data-en="HOW IT WORKS" data-it="COME FUNZIONA">HOW IT WORKS</p>
+            <h2 data-en="From raw city data<br>to validated defense." data-it="Dai dati grezzi della citt&agrave;<br>a una difesa validata.">From raw city data<br>to validated defense.</h2>
+
+            <div class="steps">
+                <div class="step">
+                    <div class="step-num">01</div>
+                    <div class="step-body">
+                        <h3 data-en="Ingest" data-it="Acquisizione">Ingest</h3>
+                        <p data-en="Upload your city. IGUDAR loads real-world geographic data and builds a precise digital twin of the urban environment at sub-meter resolution." data-it="Carica la tua citt&agrave;. IGUDAR acquisisce dati geografici reali e costruisce un gemello digitale preciso dell'ambiente urbano a risoluzione sub-metrica.">Upload your city. IGUDAR loads real-world geographic data and builds a precise digital twin of the urban environment at sub-meter resolution.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">02</div>
+                    <div class="step-body">
+                        <h3 data-en="Analyze" data-it="Analisi">Analyze</h3>
+                        <p data-en="The platform identifies every corridor an attacker could use to reach the target. Not just the obvious ones. Every street, every passage, every vulnerability." data-it="La piattaforma identifica ogni corridoio che un attaccante potrebbe usare per raggiungere l'obiettivo. Non solo quelli ovvi. Ogni strada, ogni passaggio, ogni vulnerabilit&agrave;.">The platform identifies every corridor an attacker could use to reach the target. Not just the obvious ones. Every street, every passage, every vulnerability.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">03</div>
+                    <div class="step-body">
+                        <h3 data-en="Defend" data-it="Difesa">Defend</h3>
+                        <p data-en="An AI agent places barriers in the optimal configuration. Each placement adapts to the changing tactical landscape. The defense evolves as corridors close." data-it="Un agente AI piazza le barriere nella configurazione ottimale. Ogni piazzamento si adatta al panorama tattico che cambia. La difesa evolve man mano che i corridoi si chiudono.">An AI agent places barriers in the optimal configuration. Each placement adapts to the changing tactical landscape. The defense evolves as corridors close.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">04</div>
+                    <div class="step-body">
+                        <h3 data-en="Validate" data-it="Validazione">Validate</h3>
+                        <p data-en="A simulated attacker tries to breach the defense. If it fails, the defense works. You get a tactical report with casualty projections, velocity analysis, and regulatory compliance." data-it="Un attaccante simulato tenta di violare la difesa. Se fallisce, la difesa funziona. Ricevi un report tattico con proiezioni vittime, analisi velocit&agrave; e conformit&agrave; normativa.">A simulated attacker tries to breach the defense. If it fails, the defense works. You get a tactical report with casualty projections, velocity analysis, and regulatory compliance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SITREP -->
+    <section class="section">
+        <div class="container">
+            <div class="section-num">03</div>
+            <p class="section-tag">OUTPUT</p>
+            <h2 data-en="Not a report. A verdict." data-it="Non un report. Un verdetto.">Not a report. A verdict.</h2>
+
+            <div class="sitrep">
+                <div class="sitrep-bar">
+                    <span>TACTICAL SITREP</span>
+                    <span class="sitrep-status">IGUDAR-2027</span>
+                </div>
+                <div class="sitrep-body">
+                    <div class="sitrep-map">
+                        <div class="sitrep-target">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="35" stroke="rgba(255,255,255,0.1)" fill="none" stroke-width="0.5"/>
+                                <circle cx="50" cy="50" r="18" stroke="rgba(255,255,255,0.15)" fill="none" stroke-width="0.5"/>
+                                <line x1="50" y1="5" x2="50" y2="95" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+                                <line x1="5" y1="50" x2="95" y2="50" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+                                <circle cx="50" cy="50" r="3" fill="rgba(255,255,255,0.3)"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="sitrep-data">
+                        <div class="sitrep-row"><span class="sr-label" data-en="Impact velocity" data-it="Velocit&agrave; impatto">Impact velocity</span><span class="sr-val">0.0 km/h</span></div>
+                        <div class="sitrep-row"><span class="sr-label" data-en="Casualties" data-it="Vittime">Casualties</span><span class="sr-val">0</span></div>
+                        <div class="sitrep-row"><span class="sr-label" data-en="Barriers deployed" data-it="Barriere piazzate">Barriers deployed</span><span class="sr-val">5 / 8</span></div>
+                        <div class="sitrep-row"><span class="sr-label" data-en="Regulation" data-it="Normativa">Regulation</span><span class="sr-val" data-en="Compliant" data-it="Conforme">Compliant</span></div>
+                        <div class="sitrep-row sitrep-verdict"><span class="sr-label">Status</span><span class="sr-val" data-en="Target defended" data-it="Obiettivo difeso">Target defended</span></div>
+                    </div>
+                </div>
+            </div>
+            <p class="sitrep-note" data-en="Placeholder. Actual tactical imagery will appear here when the system produces a validated defense." data-it="Placeholder. L'immagine tattica reale apparir&agrave; qui quando il sistema produrr&agrave; una difesa validata.">Placeholder. Actual tactical imagery will appear here when the system produces a validated defense.</p>
+        </div>
+    </section>
+
+    <!-- DEFEND ANYTHING -->
+    <section class="section section-alt" id="defend">
+        <div class="container">
+            <div class="section-num">04</div>
+            <p class="section-tag" data-en="DEFEND ANYTHING" data-it="DIFENDI QUALSIASI COSA">DEFEND ANYTHING</p>
+            <h2 data-en="One platform.<br>Every asset." data-it="Una piattaforma.<br>Ogni obiettivo.">One platform.<br>Every asset.</h2>
+
+            <div class="models-grid">
+                <div class="model-card">
+                    <div class="model-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M3 7v1a3 3 0 006 0V7m0 1a3 3 0 006 0V7m0 1a3 3 0 006 0V7M5 21V10.7M19 21V10.7"/><path d="M5 7l2-4h10l2 4"/></svg>
+                    </div>
+                    <h3 data-en="Public Squares" data-it="Piazze Pubbliche">Public Squares</h3>
+                    <p data-en="Markets, festivals, gatherings. Protect open spaces where crowds are most vulnerable and traditional perimeters don't exist." data-it="Mercati, festival, raduni. Proteggi gli spazi aperti dove la folla &egrave; pi&ugrave; vulnerabile e i perimetri tradizionali non esistono.">Markets, festivals, gatherings. Protect open spaces where crowds are most vulnerable and traditional perimeters don't exist.</p>
+                </div>
+                <div class="model-card">
+                    <div class="model-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0H5m14 0h2m-16 0H3"/><path d="M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 4v4h4v-4"/></svg>
+                    </div>
+                    <h3 data-en="Buildings &amp; Facilities" data-it="Edifici e Strutture">Buildings &amp; Facilities</h3>
+                    <p data-en="Embassies, government offices, corporate headquarters. Perimeter defense optimized for complex architectural layouts and multiple access points." data-it="Ambasciate, uffici governativi, sedi aziendali. Difesa perimetrale ottimizzata per layout architettonici complessi e punti di accesso multipli.">Embassies, government offices, corporate headquarters. Perimeter defense optimized for complex architectural layouts and multiple access points.</p>
+                </div>
+                <div class="model-card">
+                    <div class="model-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                    </div>
+                    <h3 data-en="Critical Infrastructure" data-it="Infrastrutture Critiche">Critical Infrastructure</h3>
+                    <p data-en="Airports, train stations, energy facilities. Model threats at scale across interconnected infrastructure with cascading vulnerability analysis." data-it="Aeroporti, stazioni, impianti energetici. Modella le minacce su larga scala attraverso infrastrutture interconnesse con analisi di vulnerabilit&agrave; a cascata.">Airports, train stations, energy facilities. Model threats at scale across interconnected infrastructure with cascading vulnerability analysis.</p>
+                </div>
+                <div class="model-card">
+                    <div class="model-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3 data-en="Events &amp; Temporary Sites" data-it="Eventi e Siti Temporanei">Events &amp; Temporary Sites</h3>
+                    <p data-en="Concerts, sports events, political rallies. Rapidly deployable defense plans for temporary venues with changing crowd dynamics." data-it="Concerti, eventi sportivi, comizi. Piani difensivi rapidamente implementabili per siti temporanei con dinamiche di folla variabili.">Concerts, sports events, political rallies. Rapidly deployable defense plans for temporary venues with changing crowd dynamics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RISK SCORE -->
+    <section class="section" id="risk">
+        <div class="container">
+            <div class="section-num">05</div>
+            <p class="section-tag" data-en="RISK INTELLIGENCE" data-it="INTELLIGENCE DEL RISCHIO">RISK INTELLIGENCE</p>
+            <h2 data-en="From simulation<br>to risk score." data-it="Dalla simulazione<br>al punteggio di rischio.">From simulation<br>to risk score.</h2>
+
+            <div class="risk-layout">
+                <div class="risk-text">
+                    <p data-en="Every IGUDAR simulation generates a quantitative risk profile. Velocity at impact, casualty projections, defense coverage, corridor exposure. Measurable. Auditable. Insurable." data-it="Ogni simulazione IGUDAR genera un profilo di rischio quantitativo. Velocit&agrave; all'impatto, proiezioni vittime, copertura difensiva, esposizione corridoi. Misurabile. Verificabile. Assicurabile.">Every IGUDAR simulation generates a quantitative risk profile. Velocity at impact, casualty projections, defense coverage, corridor exposure. Measurable. Auditable. Insurable.</p>
+                    <div class="risk-usecases">
+                        <div class="risk-use">
+                            <h4 data-en="For Insurers" data-it="Per le Assicurazioni">For Insurers</h4>
+                            <p data-en="Quantify terrorism risk for urban properties and events. Replace subjective assessments with simulation-backed scores. Price policies based on actual vulnerability, not zip codes." data-it="Quantifica il rischio terrorismo per propriet&agrave; urbane ed eventi. Sostituisci le valutazioni soggettive con punteggi basati su simulazione. Prezza le polizze sulla vulnerabilit&agrave; reale, non sul CAP.">Quantify terrorism risk for urban properties and events. Replace subjective assessments with simulation-backed scores. Price policies based on actual vulnerability, not zip codes.</p>
+                        </div>
+                        <div class="risk-use">
+                            <h4 data-en="For Municipalities" data-it="Per i Comuni">For Municipalities</h4>
+                            <p data-en="Prioritize security investments with data. Know which piazza needs barriers first. Justify budget allocation to citizens with objective risk metrics." data-it="Dai priorit&agrave; agli investimenti di sicurezza con i dati. Sappi quale piazza ha bisogno di barriere per prima. Giustifica l'allocazione del budget ai cittadini con metriche di rischio oggettive.">Prioritize security investments with data. Know which piazza needs barriers first. Justify budget allocation to citizens with objective risk metrics.</p>
+                        </div>
+                        <div class="risk-use">
+                            <h4 data-en="For Event Organizers" data-it="Per gli Organizzatori di Eventi">For Event Organizers</h4>
+                            <p data-en="Get a defense certification before the event starts. Show authorities and insurers that your venue has been adversarially tested and meets protection standards." data-it="Ottieni una certificazione difensiva prima che l'evento inizi. Mostra alle autorit&agrave; e alle assicurazioni che il tuo sito &egrave; stato testato in modo avversariale e rispetta gli standard di protezione.">Get a defense certification before the event starts. Show authorities and insurers that your venue has been adversarially tested and meets protection standards.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="risk-score-card">
+                    <div class="rsc-header" data-en="RISK ASSESSMENT" data-it="VALUTAZIONE RISCHIO">RISK ASSESSMENT</div>
+                    <div class="rsc-body">
+                        <div class="rsc-score">
+                            <div class="rsc-number">B+</div>
+                            <div class="rsc-label" data-en="Defense Rating" data-it="Rating Difensivo">Defense Rating</div>
+                        </div>
+                        <div class="rsc-rows">
+                            <div class="rsc-row">
+                                <span data-en="Corridor coverage" data-it="Copertura corridoi">Corridor coverage</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="rsc-row">
+                                <span data-en="Max impact velocity" data-it="Velocit&agrave; impatto max">Max impact velocity</span>
+                                <span>12 km/h</span>
+                            </div>
+                            <div class="rsc-row">
+                                <span data-en="Projected casualties" data-it="Vittime proiettate">Projected casualties</span>
+                                <span>0</span>
+                            </div>
+                            <div class="rsc-row">
+                                <span data-en="Regulatory compliance" data-it="Conformit&agrave; normativa">Regulatory compliance</span>
+                                <span data-en="Pass" data-it="Conforme">Pass</span>
+                            </div>
+                            <div class="rsc-row">
+                                <span data-en="Residual risk" data-it="Rischio residuo">Residual risk</span>
+                                <span data-en="Low" data-it="Basso">Low</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISION -->
+    <section class="section section-alt vision" id="vision">
+        <div class="container">
+            <div class="vision-layout">
+                <div class="vision-left">
+                    <p class="section-tag" data-en="OUR VISION" data-it="LA NOSTRA VISIONE">OUR VISION</p>
+                    <h2 class="vision-title" data-en="Defend anywhere." data-it="Difendi ovunque.">Defend anywhere.</h2>
+                </div>
+                <div class="vision-right">
+                    <p class="vision-text" data-en="IGUDAR takes its name from the <em>igudar</em> &mdash; the fortified granaries of the Amazigh people in southern Morocco. Built into mountainsides above Taroudant, they protected entire communities for centuries. Not with armies, but with architecture." data-it="IGUDAR prende il nome dagli <em>igudar</em> &mdash; i granai fortificati del popolo Amazigh nel sud del Marocco. Costruiti nelle montagne sopra Taroudant, hanno protetto intere comunit&agrave; per secoli. Non con gli eserciti, ma con l'architettura.">IGUDAR takes its name from the <em>igudar</em> &mdash; the fortified granaries of the Amazigh people in southern Morocco. Built into mountainsides above Taroudant, they protected entire communities for centuries. Not with armies, but with architecture.</p>
+                    <p class="vision-text" data-en="Our mission is the same: use the geometry of the environment itself as a defense. An adversarial optimization engine that adapts to any scenario &mdash; from a market square to a commercial port, from a stadium to a government building." data-it="La nostra missione &egrave; la stessa: usare la geometria dell'ambiente stesso come difesa. Un motore di ottimizzazione avversariale che si adatta a qualsiasi scenario &mdash; dalla piazza del mercato al porto commerciale, dallo stadio all'edificio governativo.">Our mission is the same: use the geometry of the environment itself as a defense. An adversarial optimization engine that adapts to any scenario &mdash; from a market square to a commercial port, from a stadium to a government building.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOUNDERS -->
+    <section class="section" id="founders">
+        <div class="container">
+            <div class="section-num">06</div>
+            <p class="section-tag" data-en="FOUNDERS" data-it="FONDATORI">FOUNDERS</p>
+            <h2 data-en="Built to protect." data-it="Costruito per proteggere.">Built to protect.</h2>
+
+            <div class="founders">
+                <div class="founder">
+                    <div class="founder-init">MZ</div>
+                    <div>
+                        <div class="founder-name">Mehdi Zahid</div>
+                        <div class="founder-role">Co-Founder</div>
+                    </div>
+                </div>
+                <div class="founder">
+                    <div class="founder-init">OZ</div>
+                    <div>
+                        <div class="founder-name">Oussama Zahid</div>
+                        <div class="founder-role">Co-Founder</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta" id="contact">
+        <div class="container cta-content">
+            <h2 data-en="Interested in protecting your city?" data-it="Vuoi proteggere la tua citt&agrave;?">Interested in protecting your city?</h2>
+            <p data-en="We work with municipalities, prefectures, and security operators. Get in touch." data-it="Lavoriamo con comuni, prefetture e operatori della sicurezza. Contattaci.">We work with municipalities, prefectures, and security operators. Get in touch.</p>
+            <a href="mailto:contact@igudar.it" class="btn-primary btn-lg">
+                <span>contact@igudar.it</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14"><path d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div>
+                <div class="footer-logo">IGUDAR</div>
+                <div class="footer-sub">Intelligent Urban Defense And Resilience</div>
+            </div>
+            <div class="footer-copy">&copy; 2026 IGUDAR</div>
+        </div>
+    </footer>
+
+    <script>
+    (function() {
+        var lang = 'en';
+        var btn = document.getElementById('langToggle');
+
+        btn.addEventListener('click', function() {
+            lang = lang === 'en' ? 'it' : 'en';
+            btn.textContent = lang === 'en' ? 'IT' : 'EN';
+            document.documentElement.lang = lang === 'en' ? 'en' : 'it';
+
+            document.querySelectorAll('[data-' + lang + ']').forEach(function(el) {
+                var val = el.getAttribute('data-' + lang);
+                if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                    el.placeholder = val;
+                } else {
+                    el.innerHTML = val;
+                }
+            });
+        });
+    })();
+    </script>
+
+</body>
+</html>
