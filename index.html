@@ -250,7 +250,8 @@
         <div class="container">
             <div class="section-num reveal">06</div>
             <p class="section-tag reveal" data-en="THE CASE" data-it="IL CASO">THE CASE</p>
-            <h2 class="reveal" data-en="Piazza XX Settembre,<br>Pordenone." data-it="Piazza XX Settembre,<br>Pordenone.">Piazza XX Settembre,<br>Pordenone.</h2>
+            <h2 class="reveal" data-en="Piazzale XX Settembre,<br>Pordenone." data-it="Piazzale XX Settembre,<br>Pordenone.">Piazzale XX Settembre,<br>Pordenone.</h2>
+            <p class="case-config reveal"><span class="config-tag" data-en="CONFIG" data-it="CONFIG">CONFIG</span><span class="config-val" data-en="max protection &middot; 50 barriers" data-it="max protezione &middot; 50 barriere">max protection &middot; 50 barriers</span></p>
             <p class="case-intro reveal" data-en="50 barriers placed by the algorithm. Tested against 50 adversarial attacks generated at random angles." data-it="50 barriere posizionate dall'algoritmo. Testate contro 50 attacchi avversariali generati ad angoli casuali.">50 barriers placed by the algorithm. Tested against 50 adversarial attacks generated at random angles.</p>
 
             <div class="stat-cards case-stats reveal">
@@ -275,40 +276,48 @@
         </div>
     </section>
 
-    <!-- SITREP -->
-    <section class="section">
+    <!-- OUTPUT — Tactical Report -->
+    <section class="section" id="output">
         <div class="container">
             <div class="section-num reveal">07</div>
-            <p class="section-tag reveal">OUTPUT</p>
-            <h2 class="reveal" data-en="What the output<br>will look like." data-it="Come sar&agrave;<br>il risultato.">What the output<br>will look like.</h2>
+            <p class="section-tag reveal" data-en="OUTPUT" data-it="OUTPUT">OUTPUT</p>
+            <h2 class="reveal" data-en="What the platform<br>produces." data-it="Ci&ograve; che la piattaforma<br>produce.">What the platform<br>produces.</h2>
+            <p class="output-intro reveal" data-en="Each simulation run generates a full tactical report: threat map, barrier layout, adversarial path replay, and KPIs benchmarked against a baseline configuration." data-it="Ogni simulazione genera un report tattico completo: mappa delle minacce, layout delle barriere, replay dei path avversariali e KPI confrontati con una configurazione di riferimento.">Each simulation run generates a full tactical report: threat map, barrier layout, adversarial path replay, and KPIs benchmarked against a baseline configuration.</p>
 
-            <div class="sitrep reveal">
-                <div class="sitrep-bar">
-                    <span>TACTICAL SITREP</span>
-                    <span class="sitrep-status" data-en="PROTOTYPE PREVIEW" data-it="ANTEPRIMA PROTOTIPO">PROTOTYPE PREVIEW</span>
+            <figure class="output-render reveal">
+                <div class="output-render-frame">
+                    <img src="investor_viz_web.png" alt="IGUDAR tactical report — Red vs Blue simulation on Piazzale XX Settembre, Pordenone." loading="lazy">
                 </div>
-                <div class="sitrep-body">
-                    <div class="sitrep-map">
-                        <div class="sitrep-target">
-                            <svg viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="35" stroke="rgba(255,255,255,0.1)" fill="none" stroke-width="0.5"/>
-                                <circle cx="50" cy="50" r="18" stroke="rgba(255,255,255,0.15)" fill="none" stroke-width="0.5"/>
-                                <line x1="50" y1="5" x2="50" y2="95" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
-                                <line x1="5" y1="50" x2="95" y2="50" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
-                                <circle cx="50" cy="50" r="3" fill="rgba(255,255,255,0.3)"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="sitrep-data">
-                        <div class="sitrep-row"><span class="sr-label" data-en="Impact velocity" data-it="Velocit&agrave; d'impatto">Impact velocity</span><span class="sr-val">0.0 km/h</span></div>
-                        <div class="sitrep-row"><span class="sr-label" data-en="Casualties" data-it="Vittime">Casualties</span><span class="sr-val">0</span></div>
-                        <div class="sitrep-row"><span class="sr-label" data-en="Barriers deployed" data-it="Barriere piazzate">Barriers deployed</span><span class="sr-val">5 / 8</span></div>
-                        <div class="sitrep-row"><span class="sr-label" data-en="Regulation" data-it="Normativa">Regulation</span><span class="sr-val" data-en="Compliant" data-it="Conforme">Compliant</span></div>
-                        <div class="sitrep-row sitrep-verdict"><span class="sr-label">Status</span><span class="sr-val" data-en="Target defended" data-it="Obiettivo difeso">Target defended</span></div>
-                    </div>
+                <figcaption class="output-caption">
+                    <span class="output-caption-tag" data-en="SIM-002 &middot; life-saver-optimal" data-it="SIM-002 &middot; life-saver-optimal">SIM-002 &middot; life-saver-optimal</span>
+                    <p data-en="Piazzale XX Settembre, Pordenone. <strong>20 optimized barriers</strong> benchmarked against a <strong>10-barrier manual baseline</strong> across <strong>50 adversarial vectors</strong>. Casualty reduction: <strong>46%</strong> &mdash; with half the barriers in the right places." data-it="Piazzale XX Settembre, Pordenone. <strong>20 barriere ottimizzate</strong> confrontate con un <strong>baseline manuale da 10 barriere</strong> su <strong>50 vettori avversariali</strong>. Riduzione delle vittime: <strong>46%</strong> &mdash; con met&agrave; delle barriere, nei punti giusti.">Piazzale XX Settembre, Pordenone. <strong>20 optimized barriers</strong> benchmarked against a <strong>10-barrier manual baseline</strong> across <strong>50 adversarial vectors</strong>. Casualty reduction: <strong>46%</strong> &mdash; with half the barriers in the right places.</p>
+                </figcaption>
+            </figure>
+
+            <div class="output-kpis reveal">
+                <div class="output-kpi">
+                    <div class="output-kpi-num">46%</div>
+                    <div class="output-kpi-label" data-en="casualty reduction" data-it="riduzione vittime">casualty reduction</div>
+                    <div class="output-kpi-sub" data-en="46.0 &rarr; 26.5 avg" data-it="46.0 &rarr; 26.5 media">46.0 &rarr; 26.5 avg</div>
+                </div>
+                <div class="output-kpi">
+                    <div class="output-kpi-num">20 <span class="output-kpi-unit">/ 10</span></div>
+                    <div class="output-kpi-label" data-en="optimized vs manual" data-it="ottimizzate vs manuali">optimized vs manual</div>
+                    <div class="output-kpi-sub" data-en="barriers deployed" data-it="barriere piazzate">barriers deployed</div>
+                </div>
+                <div class="output-kpi">
+                    <div class="output-kpi-num">50</div>
+                    <div class="output-kpi-label" data-en="adversarial vectors" data-it="vettori avversariali">adversarial vectors</div>
+                    <div class="output-kpi-sub" data-en="Red Agent, random angles" data-it="Red Agent, angoli casuali">Red Agent, random angles</div>
+                </div>
+                <div class="output-kpi">
+                    <div class="output-kpi-num">~2 <span class="output-kpi-unit">h</span></div>
+                    <div class="output-kpi-label" data-en="simulation runtime" data-it="durata simulazione">simulation runtime</div>
+                    <div class="output-kpi-sub" data-en="Gabrielli-compliant report, auto-generated" data-it="report conforme Gabrielli, auto-generato">Gabrielli-compliant report, auto-generated</div>
                 </div>
             </div>
-            <p class="sitrep-note" data-en="Preview of expected output format. Final data will be generated by the platform upon completion of the simulation pipeline." data-it="Anteprima del formato di output previsto. I dati finali saranno generati dalla piattaforma al completamento della pipeline di simulazione.">Preview of expected output format. Final data will be generated by the platform upon completion of the simulation pipeline.</p>
+
+            <p class="output-note reveal" data-en="Same site, two configurations: the <strong>50-barrier max-protection</strong> run (Section 06) proves the defensive ceiling; the <strong>20-vs-10</strong> run above proves why optimization matters when budgets are finite." data-it="Stesso sito, due configurazioni: il run a <strong>50 barriere max-protection</strong> (Sezione 06) dimostra il tetto difensivo; il run <strong>20-vs-10</strong> qui sopra dimostra perch&eacute; l'ottimizzazione conta quando i budget sono finiti.">Same site, two configurations: the <strong>50-barrier max-protection</strong> run (Section 06) proves the defensive ceiling; the <strong>20-vs-10</strong> run above proves why optimization matters when budgets are finite.</p>
         </div>
     </section>
 
@@ -368,12 +377,12 @@
             <p class="section-tag reveal" data-en="L3 &middot; RISK INTELLIGENCE" data-it="L3 &middot; RISK INTELLIGENCE">L3 &middot; RISK INTELLIGENCE</p>
             <h2 class="reveal" data-en="From simulation<br>to risk score." data-it="Da simulazione<br>a punteggio di rischio.">From simulation<br>to risk score.</h2>
 
-            <p class="risk-intro reveal" data-en="The third layer turns every simulation into a comparable number. Measurable. Auditable. Insurable. What the platform produces today is below, with the real data from Piazza XX Settembre, Pordenone. L3 will bring these outputs into a standard rating, readable by insurers, municipalities, and event organizers." data-it="Il terzo layer trasforma ogni simulazione in un numero confrontabile. Misurabile. Verificabile. Assicurabile. Ci&ograve; che la piattaforma produce oggi &egrave; qui sotto, con i dati reali di Piazza XX Settembre a Pordenone. L3 porter&agrave; questi output in un rating standard, leggibile da assicuratori, comuni e organizzatori.">The third layer turns every simulation into a comparable number. Measurable. Auditable. Insurable. What the platform produces today is below, with the real data from Piazza XX Settembre, Pordenone. L3 will bring these outputs into a standard rating, readable by insurers, municipalities, and event organizers.</p>
+            <p class="risk-intro reveal" data-en="The third layer turns every simulation into a comparable number. Measurable. Auditable. Insurable. What the platform produces today is below, with the real data from Piazzale XX Settembre, Pordenone. L3 will bring these outputs into a standard rating, readable by insurers, municipalities, and event organizers." data-it="Il terzo layer trasforma ogni simulazione in un numero confrontabile. Misurabile. Verificabile. Assicurabile. Ci&ograve; che la piattaforma produce oggi &egrave; qui sotto, con i dati reali di Piazzale XX Settembre a Pordenone. L3 porter&agrave; questi output in un rating standard, leggibile da assicuratori, comuni e organizzatori.">The third layer turns every simulation into a comparable number. Measurable. Auditable. Insurable. What the platform produces today is below, with the real data from Piazzale XX Settembre, Pordenone. L3 will bring these outputs into a standard rating, readable by insurers, municipalities, and event organizers.</p>
 
             <div class="pordenone-banner reveal">
                 <div class="pb-header">
                     <span class="pb-tag" data-en="REAL OUTPUT" data-it="OUTPUT REALE">REAL OUTPUT</span>
-                    <span class="pb-title">Piazza XX Settembre &middot; Pordenone</span>
+                    <span class="pb-title">Piazzale XX Settembre &middot; Pordenone</span>
                 </div>
                 <div class="pb-stats">
                     <div class="pb-stat">
