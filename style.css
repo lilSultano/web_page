@@ -496,7 +496,7 @@ body {
 .statement {
     border-top: 1px solid var(--border-dim);
     border-bottom: 1px solid var(--border-dim);
-    padding: 100px 0;
+    padding: 56px 0;
     background: var(--bg-alt);
 }
 
@@ -520,7 +520,7 @@ body {
    ================================================================ */
 
 .section {
-    padding: 140px 0;
+    padding: 72px 0;
 }
 
 .section-alt {
@@ -531,11 +531,11 @@ body {
 
 .section-num {
     font-family: var(--mono);
-    font-size: 56px;
+    font-size: 44px;
     font-weight: 700;
     color: var(--border-dim);
     line-height: 1;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 
 .section-tag {
@@ -552,7 +552,7 @@ body {
     font-weight: 700;
     line-height: 1.18;
     letter-spacing: -0.5px;
-    margin-bottom: 60px;
+    margin-bottom: 32px;
     max-width: 600px;
     color: var(--white);
 }
@@ -1142,7 +1142,7 @@ body {
    VISION
    ================================================================ */
 
-.vision { padding: 140px 0; }
+.vision { padding: 72px 0; }
 
 .vision-layout {
     display: grid;
@@ -1314,6 +1314,325 @@ body {
     color: var(--text-4);
 }
 
+.footer-links {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-links a {
+    font-size: 11px;
+    color: var(--text-3);
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: color 0.15s;
+}
+
+.footer-links a:hover { color: var(--text); }
+
+/* ================================================================
+   INLINE CTA STRIP — mid-page conversion prompts
+   ================================================================ */
+
+.cta-strip {
+    margin-top: 48px;
+    padding: 36px 44px;
+    border: 1px solid var(--border);
+    background: linear-gradient(135deg, rgba(255,255,255,0.02) 0%, transparent 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.cta-strip-text {
+    flex: 1;
+    min-width: 260px;
+}
+
+.cta-strip-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white);
+    line-height: 1.3;
+    margin-bottom: 6px;
+    letter-spacing: -0.3px;
+}
+
+.cta-strip-sub {
+    font-size: 14px;
+    color: var(--text-3);
+    line-height: 1.55;
+}
+
+/* ================================================================
+   STICKY CTA — desktop floating chip + mobile bottom bar
+   ================================================================ */
+
+.sticky-cta {
+    position: fixed;
+    z-index: 999;
+    right: 28px;
+    bottom: 28px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 22px;
+    background: var(--white);
+    color: var(--bg);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    border-radius: 999px;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.08);
+    transform: translateY(140%);
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s, background 0.15s;
+}
+
+.sticky-cta.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.sticky-cta:hover {
+    background: var(--text-2);
+}
+
+.sticky-cta-arrow {
+    transition: transform 0.15s;
+}
+
+.sticky-cta:hover .sticky-cta-arrow {
+    transform: translateX(2px);
+}
+
+/* ================================================================
+   POLICY PAGES (privacy / cookie)
+   ================================================================ */
+
+.policy-page {
+    padding: 140px 0 96px;
+    min-height: 100vh;
+}
+
+.policy-title {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: -0.5px;
+    color: var(--white);
+    margin-bottom: 32px;
+}
+
+.policy-viewer-wrap {
+    background: var(--bg-alt);
+    border: 1px solid var(--border-dim);
+    padding: 32px;
+    color: var(--text-2);
+}
+
+.policy-viewer-wrap av-policy-viewer {
+    --av-color-text: var(--text-2);
+    color: var(--text-2);
+    display: block;
+}
+
+/* ================================================================
+   CONTACT FORM
+   ================================================================ */
+
+.contact-form {
+    width: 100%;
+    max-width: 640px;
+    margin: 8px auto 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.cf-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.cf-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cf-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-4);
+}
+
+.cf-field input,
+.cf-field select,
+.cf-field textarea {
+    width: 100%;
+    background: var(--bg-alt);
+    border: 1px solid var(--border-dim);
+    color: var(--text);
+    font-family: var(--font);
+    font-size: 14px;
+    padding: 12px 14px;
+    transition: border-color 0.15s, background 0.15s;
+    resize: none;
+}
+
+.cf-field textarea {
+    min-height: 120px;
+    line-height: 1.55;
+}
+
+.cf-field select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path fill='none' stroke='%237E8388' stroke-width='1.5' d='M2 4l4 4 4-4'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+}
+
+.cf-field select option {
+    background: var(--bg-alt);
+    color: var(--text);
+}
+
+.cf-field input:focus,
+.cf-field select:focus,
+.cf-field textarea:focus {
+    outline: none;
+    border-color: var(--text-3);
+    background: var(--bg);
+}
+
+.cf-field input:invalid:not(:placeholder-shown),
+.cf-field textarea:invalid:not(:placeholder-shown) {
+    border-color: var(--c-red);
+}
+
+.contact-form.cf-submitted .cf-field input:invalid,
+.contact-form.cf-submitted .cf-field select:invalid,
+.contact-form.cf-submitted .cf-field textarea:invalid {
+    border-color: var(--c-red);
+}
+
+.cf-honey {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.cf-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin-top: 8px;
+}
+
+.cf-actions .btn-primary {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    font-family: var(--font);
+}
+
+.cf-actions .btn-primary[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.cf-btn-spinner {
+    display: none;
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgba(0,0,0,0.2);
+    border-top-color: var(--bg);
+    border-radius: 50%;
+    animation: cfspin 0.7s linear infinite;
+}
+
+.contact-form.cf-loading .cf-btn-arrow { display: none; }
+.contact-form.cf-loading .cf-btn-spinner { display: inline-block; }
+
+@keyframes cfspin {
+    to { transform: rotate(360deg); }
+}
+
+.cf-privacy {
+    font-size: 12px;
+    color: var(--text-4);
+    text-align: center;
+    line-height: 1.55;
+    margin: 0;
+}
+
+.cf-privacy a {
+    color: var(--text-3);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.cf-privacy a:hover { color: var(--text); }
+
+.cf-feedback {
+    margin-top: 4px;
+    padding: 16px 20px;
+    border: 1px solid var(--border-dim);
+    font-size: 14px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.cf-feedback[hidden] { display: none; }
+
+.cf-feedback strong {
+    font-weight: 600;
+    color: var(--white);
+}
+
+.cf-feedback span {
+    color: var(--text-3);
+}
+
+.cf-success {
+    border-color: rgba(61, 225, 154, 0.3);
+    background: rgba(61, 225, 154, 0.06);
+}
+
+.cf-success strong { color: var(--c-green); }
+
+.cf-error {
+    border-color: rgba(242, 93, 93, 0.3);
+    background: rgba(242, 93, 93, 0.06);
+}
+
+.cf-error strong { color: var(--c-red); }
+
+.contact-form.cf-sent .cf-row,
+.contact-form.cf-sent > .cf-field,
+.contact-form.cf-sent .cf-actions { display: none; }
+
+@media (max-width: 700px) {
+    .cf-row { grid-template-columns: 1fr; gap: 16px; }
+    .contact-form { gap: 16px; }
+}
+
 /* ================================================================
    STAT CARDS (Problem + Pordenone case)
    ================================================================ */
@@ -1404,8 +1723,8 @@ body {
     color: var(--text-3);
     line-height: 1.7;
     max-width: 720px;
-    margin-top: -32px;
-    margin-bottom: 48px;
+    margin-top: -20px;
+    margin-bottom: 32px;
 }
 
 /* ================================================================
@@ -1586,8 +1905,8 @@ body {
     font-size: 16px;
     color: var(--text-3);
     line-height: 1.7;
-    margin-top: -32px;
-    margin-bottom: 48px;
+    margin-top: -20px;
+    margin-bottom: 32px;
 }
 
 .method-compare {
@@ -1697,8 +2016,8 @@ body {
     color: var(--text-3);
     line-height: 1.7;
     max-width: 720px;
-    margin-top: -32px;
-    margin-bottom: 48px;
+    margin-top: -20px;
+    margin-bottom: 32px;
 }
 
 .model-card {
@@ -1829,15 +2148,17 @@ body {
     .container { padding: 0 24px; }
     .nav-inner { padding: 0 24px; }
     .hero h1 { font-size: 40px; letter-spacing: -1px; }
-    .hero-content { padding: 100px 24px 160px; }
-    .section { padding: 100px 0; }
-    .section h2 { font-size: 32px; margin-bottom: 48px; }
+    .hero-content { padding: 100px 24px 120px; }
+    .section { padding: 56px 0; }
+    .section h2 { font-size: 32px; margin-bottom: 28px; }
 
     .output-kpis { grid-template-columns: 1fr 1fr; }
     .output-kpi { padding: 26px 20px 22px; }
     .output-kpi-num { font-size: 36px; }
     .output-render-frame { padding: 14px; }
-    .output-intro { font-size: 16px; margin-bottom: 40px; }
+    .output-intro { font-size: 16px; margin-bottom: 28px; }
+    .statement { padding: 48px 0; }
+    .cta-strip { margin-top: 40px; }
     .case-config { font-size: 10px; }
     .models-grid { grid-template-columns: 1fr; }
     .risk-layout { grid-template-columns: 1fr; }
@@ -1849,6 +2170,27 @@ body {
     .nav-links { display: none; }
     .lang-btn { margin-left: auto; }
     .footer-inner { flex-direction: column; gap: 12px; text-align: center; }
+    .footer-links { justify-content: center; }
+
+    .cta-strip { padding: 28px 24px; gap: 20px; flex-direction: column; align-items: flex-start; margin-top: 56px; }
+    .cta-strip-title { font-size: 18px; }
+
+    .sticky-cta {
+        right: 0;
+        left: 0;
+        bottom: 0;
+        border-radius: 0;
+        padding: 16px 20px;
+        justify-content: center;
+        box-shadow: 0 -8px 24px rgba(0,0,0,0.5), 0 -1px 0 rgba(255,255,255,0.06);
+        font-size: 14px;
+    }
+
+    .policy-page { padding: 100px 0 72px; }
+    .policy-title { font-size: 32px; }
+    .policy-viewer-wrap { padding: 20px; }
+
+    body.has-sticky-cta { padding-bottom: 64px; }
     .intro-title { font-size: 72px; }
     .intro-subtitle { font-size: 18px; }
     .intro-entering { margin-top: 32px; }
@@ -1908,9 +2250,11 @@ body {
     .hero h1 { font-size: 32px; letter-spacing: -0.5px; }
     .hero-sub { font-size: 15px; }
     .hero-actions { flex-direction: column; align-items: center; }
+    .statement { padding: 40px 0; }
     .statement p { font-size: 18px; padding: 0 4px; }
-    .section { padding: 80px 0; }
-    .section h2 { font-size: 26px; margin-bottom: 36px; }
+    .section { padding: 44px 0; }
+    .section h2 { font-size: 26px; margin-bottom: 22px; }
+    .cta-strip { margin-top: 32px; }
     .section-num { font-size: 36px; }
 
     .pipeline { grid-template-columns: 1fr; }
