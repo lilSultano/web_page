@@ -53,25 +53,41 @@ body {
 }
 
 /* ================================================================
+   OPENING SEQUENCE — intro + hero unified via sticky overlap
+   The intro pins to the top of the viewport while the hero
+   scrolls up and over it. Backgrounds match so the transition
+   feels like one continuous section instead of two.
+   ================================================================ */
+
+.opening-sequence {
+    position: relative;
+}
+
+/* ================================================================
    INTRO SECTION — Palantir Gotham exact replica
-   Full-viewport persistent section with flicker text reveal.
-   User scrolls past to enter the site.
+   Sticky inside .opening-sequence so the IGUDAR splash stays
+   pinned while the hero rises into view, then releases when
+   the hero has fully scrolled into place.
    ================================================================ */
 
 .intro-section {
     min-height: 100vh;
-    background: #101214;
+    background: var(--bg);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    will-change: opacity, transform;
 }
 
 .intro-inner {
     display: flex;
     flex-direction: column;
     align-items: center;
+    will-change: opacity, transform;
 }
 
 .intro-title {
@@ -289,6 +305,8 @@ body {
     justify-content: center;
     position: relative;
     overflow: hidden;
+    z-index: 2;
+    background: var(--bg);
 }
 
 .hero-bg {
@@ -309,7 +327,7 @@ body {
     inset: 0;
     background:
         radial-gradient(ellipse at 50% 40%, transparent 0%, transparent 30%, var(--bg) 85%),
-        linear-gradient(to bottom, transparent 70%, var(--bg) 100%);
+        linear-gradient(to bottom, var(--bg) 0%, transparent 14%, transparent 72%, var(--bg) 100%);
     pointer-events: none;
 }
 
@@ -1386,14 +1404,9 @@ body {
     letter-spacing: 0.3px;
     border-radius: 999px;
     box-shadow: 0 12px 32px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.08);
-    transform: translateY(140%);
-    opacity: 0;
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s, background 0.15s;
-}
-
-.sticky-cta.show {
     transform: translateY(0);
     opacity: 1;
+    transition: background 0.15s;
 }
 
 .sticky-cta:hover {
